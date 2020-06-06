@@ -23,3 +23,11 @@ func RollTheDice() int {
 func rollingDice()  int{
 	return rand.Intn(MaxDiceNumber) + 1
 }
+
+func CalculateTheDiceNumber(diceNumber int) int {
+	if diceNumber % 2 == 0 {
+		return -3
+	} else {
+		return 5
+	}
+}
